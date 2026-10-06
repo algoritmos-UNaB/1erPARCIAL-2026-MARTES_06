@@ -23,7 +23,7 @@ jjmnm
 
 ## Estructuras de Datos en el Universo Pokémon
 
-- - - 
+- - -  
 
 ## Ejercicio 1: Implementación de TADs
 

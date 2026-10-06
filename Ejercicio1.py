@@ -2,7 +2,6 @@ class Pokemon:
     def __init__(self, nombre: str, tipo: str, nivel: int = 1):
         self.nombre = nombre
         self.tipo = tipo
-        # Garantiza que el nivel inicial esté dentro del rango válido [1, 100]
         self.nivel = max(1, min(100, nivel))
 
     def subir_nivel(self):
