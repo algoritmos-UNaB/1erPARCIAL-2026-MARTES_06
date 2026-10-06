@@ -29,7 +29,7 @@ class Entrenador:
             print(pokemon)
 
     def nivel_promedio():
-        if len(self.equipo) == 0:
+        if self.equipo == 0:
             return 0
 
             contador = 0
