@@ -3,7 +3,7 @@
 # 1erPARCIAL - MARTES - 06/10/26 - Comisión 1 -
 
 
-Aquino Priscila
+
 - - -
 
 ### 📌 **Modalidad**
