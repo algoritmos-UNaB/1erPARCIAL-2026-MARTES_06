@@ -1,37 +1,37 @@
 class Pokemon:
-
+    #clase pokemon con nombre, tipo y nivel
     def __init__ (self, nombre: str, tipo: str, nivel: int) :
-        #atributos del pokemon
+        #atributos basicos del pokemon
         self.nombre = nombre
         self.tipo = tipo
-        #defino nivel minimo (1) y maximo 100
-        self.nivel = max (1, min (100, nivel))
+
+        self.nivel = max (1, min (100, nivel)) #nivel maximo del pokemon (100), minimo (1)
 
 
     def subir_nivel (self):
 
-        if self.nivel < 100:
-            #sube de nivel mientras que no llegue al nivel maximo (100)
+        if self.nivel < 100: #sube nivel si no llego al nivel maximo (100)
+
             self.nivel += 1
 
 
     def __str__ (self) :
-        #devuelvo el objeto cuando se usa print
+        #devuelve como se muestra objeto cuando se hace print
         return f"Nombre: {self.nombre} | Tipo: {self.tipo} | Nivel: {self.nivel}"
 
 
 class Entrenador:
-    #nivel maximo de equipo
+
     maximo_equipo = 6
 
     def __init__ (self, nombre: str) :
 
         self.nombre = nombre
-        self.lista_equipo = [] #lista vacia donde se guardan los objetos pokemon
+        self.lista_equipo = [] #lista vacia donde se guardan los pokemones
 
 
     def agregar_pokemon (self, pokemon: Pokemon) :
-        #verifico que el equipo no sea el maximo permitido
+        #verificamos si no se alcanzaron los maximos pokemones seteados
         if len (self.lista_equipo) >= self.maximo_equipo :
 
             print (f"No se pueden tener mas de {self.maximo_equipo} pokemones en el equipo.")
@@ -41,7 +41,7 @@ class Entrenador:
             self.lista_equipo.append (pokemon)
 
     def mostrar_equipo (self) :
-        #muestro el nombre del entrenador y su equipo
+        #muestra el entrenador y su equipo
         print (f"Entrenador: {self.nombre}")
 
         for pokemon in self.lista_equipo :
@@ -49,18 +49,18 @@ class Entrenador:
             print (pokemon)
 
     def nivel_promedio (self) :
-        #si el equipo esta vacio (lista) devuelve 0 para no dividir por 0
-        if not self.lista_equipo:
+
+        if not self.lista_equipo: #si el equipo esta vacio devuelve 0
 
             return "Tu promedio es: 0"
 
-        suma = 0 
-        #sumamos todos niveles de los pokemones para sacar el promedio
+        suma = 0
+        #suma los niveles de todos los pokemones y sasca el promedio
         for poke in self.lista_equipo :
 
             suma += poke.nivel
 
-        promedio = x.nivel / len (self.lista_equipo)
+        promedio = suma / len (self.lista_equipo)
 
         return f"Tu promedio es: {promedio}"
 
