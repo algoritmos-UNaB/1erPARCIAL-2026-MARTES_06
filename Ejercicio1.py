@@ -23,4 +23,4 @@ class Entrenador:
         for pokemon in self.equipo:
             total_niveles+=pokemon.nivel
         return total_niveles/len(self.equipo)
-
+#
