@@ -46,3 +46,4 @@ class PilaEvoluciones:
 
     def __iter__(self):
         return IteradorPilaEvoluciones(self.tope)
+        
