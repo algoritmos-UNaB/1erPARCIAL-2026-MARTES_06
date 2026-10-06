@@ -39,4 +39,7 @@ class Pokemon:
           print(f"El pokemon en {self.nombre} su tipo es {self.tipo} tiene un nivel de poder de {self.nivel}")
 
 
-     
+class Entrenador:
+     def __int__(self, nombre, equipo):
+          self.nombre = nombre
+          self.equipo = equipo
