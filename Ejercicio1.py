@@ -28,7 +28,7 @@ class Entrenador:
         for pokemon in self.equipo:
             print(pokemon)
 
-    def nivel_promedio():
+    def nivel_promedio(self, equipo):
         if self.equipo == 0:
             return 0
 
@@ -36,6 +36,6 @@ class Entrenador:
         for pokemon in self.equipo:
             contador += pokemon.nivel
             
-            return contador / len(self.equipo)
+            return contador / equipo
 
         
