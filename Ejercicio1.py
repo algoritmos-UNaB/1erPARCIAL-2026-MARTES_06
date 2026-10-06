@@ -34,5 +34,5 @@ class entrenador:
     def promedio_nivel (self)-> float:
         ifnot self.equipo:
             return 0.0
-        return
+        return sum(p.nivel for p in self.equipo)/len(self.equipo)
 
