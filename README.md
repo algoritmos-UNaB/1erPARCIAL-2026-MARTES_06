@@ -9,7 +9,7 @@
 ### 📌 **Modalidad**
 
 * 🗓️ **Fecha:** Martes **06/10**
-* 🕖 **Disponibilidad:** desde las **08:30 hs** hasta las **14:15 h**.
+* 🕖 **Disponibilidad:** desde las **18:30 hs** hasta las **01:45 h**.
 * ⏱️ **Duración máxima:** **3 horas y 30 minutos (3:30 h)** desde el momento en que bifurcan el repositorio.
 * 🧪 **Intentos:** Solo **1 (uno)**. 
 * 📢 **Publicación de notas:** a más tardar el **Lunes posterior, después de las hs**.
@@ -21,69 +21,111 @@
 
 - - -
 
-## La Vida en Springfield
+## Estructuras de Datos en el Universo Pokémon
 
 - - -
 
-## Ejercicio 1: La Serie de Potencias de Homero
+## Ejercicio 1: Implementación de TADs
 
-Generar una lista por compresión que contenga la cantidad de donas que Homero consume en el infierno. Por cada dona que Homero consume apareceran más donas al ritmo de raíz de dos donas ($\displaystyle \sqrt{2}$) en su suplicio hasta que reviente.  
+En este universo, cada entrenador tiene un equipo Pokémon. Para este ejercicio deberá implementar dos clases en Python: <code>Pokemon</code> y <code>Entrenador</code>.
 
-Ejemplo: <code>{ 1: 1, 2: 1.41421356237, 3: 2, 4: 2.82842712475, 5: ... }</code>
+#### Clases a Implementar 
 
-## Ejercicio 2: La Eficiencia de Homer en la Barbacoa (Iterativo)
+- Clase <code>Pokemon</code>:
+    - Atributos:
+        - <code>nombre : str </code>: Nombre del Pokémon.
+        - <code>tipo : str</code>: Tipo del Pokémon (por ejemplo, Agua, Fuego, Planta). 
+        - <code>nivel : int</code>: Nivel del Pokémon (debe estar entre 1 y 100).
+    
+    - Métodos:
+        - <code>__init__()</code>: Constructor que inicializa los atributos del Pokémon.
+        - <code>subir_nivel()</code>: Método que incrementa el nivel del Pokémon en 1, siempre y cuando no supere el nivel 100.
+        - <code>__str__()</code>: Método que devuelve una representación en cadena del Pokémon en el formato: "Nombre: Pikachu, Tipo: Electrico, Nivel: 0"
 
-Escribir una función iterativa que calcule la cantidad total de donas consumidas en una fiesta. Recibe como parámetros dos números (naturales) `a` (donas por persona) y `b` (cantidad de personas), y devuelve el total de donas consumidas.
-
-## Ejercicio 3: La Paciencia de Marge con los Niños (Recursivo)
-
-Escribir una función recursiva que calcule cuántas veces Bart ha interrumpido a Marge. Recibe como parámetros dos números (naturales) `a` (interrupciones por hora) y `b` (horas de la tarde), y devuelve el total de interrupciones.
-
-## Ejercicio 4: La Organización de Springfield (Condicional)
-
-Escribir una función que reciba dos parámetros:
-(i) una lista desordenada de "eventos" (ej: "Kermés", "Concurso de Comida", "Reunión del Concejo Municipal"); y
-(ii) una expresión booleana (que puede ser evaluada a `True` o `False`).
-
-Si el valor de la expresión es `True`, la lista de eventos se ordenará alfabéticamente en orden descendente (de la Z a la A). En caso contrario, se ordenará de forma ascendente (de la A a la Z). Por defecto, si la función es llamada sin una "expresión" (solo la lista de eventos), la lista debe retornar ordenada de forma ascendente.
-
-## Ejercicio 5: El Inventario del Kwik-E-Mart
-
-Definir una clase `ProductoKwikE` que represente un artículo en venta en el Kwik-E-Mart. Contiene los datos:
-*   `descripcion`: 'string'
-*   `id_producto`: 'integer'
-*   `fecha_vencimiento`: `date` (importar `datetime`)
-*   `precio`: 'float'
-*   `stock`: 'integer'
-
-La clase debe contener métodos para facilitar:
-*   Cambiar uno o varios datos del producto (descripción, precio, stock).
-*   Calcular en cuántos días expira un producto. Si el método detecta que el producto ha expirado, deberá informar al usuario y marcar el stock como 0.
-
-**Importante:** Pueden agregar más atributos y métodos si lo consideran necesario (ej: `categoria`).
-
-## Ejercicio 6: La Etiqueta de los Productos del Kwik-E-Mart (Sobrecarga de Métodos)
-
-Sobrecargar los siguientes métodos en la clase `ProductoKwikE`:
-*   `__str__`: Para representar el producto de forma legible (ej: "Producto: Donuts Glaseadas | ID: 123 | Precio: $1.50 | Stock: 50").
-*   `__eq__`: Para comparar si dos productos son iguales basándose en su `id_producto` y `descripcion`.
-
-## Ejercicio 7: La Gestión del Kwik-E-Mart
-
-Crear una clase `KwikEMart`, la cual estará representada (atributos internos) mediante varias listas de objetos del tipo `ProductoKwikE`. Cada lista corresponde a un pasillo o sección del mercado (ej: "Bebidas", "Snacks", "Conveniencia").
-
-La clase debe contener métodos para facilitar:
-*   Controlar el stock de productos (añadir un nuevo producto a un pasillo, remover un producto del inventario, actualizar stock).
-*   Calcular cuántos productos expiran en las próximas 24 horas y removerlos del inventario (simulando que Apu los desecha).
-
-**Importante:** Pueden agregar más atributos y métodos si lo consideran necesario (ej: método para buscar un producto por su ID).
+ - Clase Entrenador:
+    - Atributos:
+        - <code>nombre : str</code>: Nombre del entrenador.
+        - <code>equipo : list</code>: Lista que contiene instancias de la clase <code>Pokemon</code>. 
+    - Métodos:
+        - <code>__init__()</code>: Constructor que inicializa el nombre del entrenador y crea una lista vacía para el equipo.
+        - <code>agregar_pokemon()</code>: Método que agrega un Pokémon al equipo. Si ya hay 6 Pokémon en el equipo, debe mostrar un mensaje indicando que no se pueden tener más Pokémon.
+        - <code>mostrar_equipo()</code>: Método que imprime todos los Pokémon del equipo utilizando el método  <code>__str__</code> de la clase <code>Pokemon</code>.
+        - <code>nivel_promedio():</code> Método que calcula y devuelve el nivel promedio de los Pokémon en el equipo. Si no hay Pokémon en el equipo, debe devolver 0.
 
 
-## Ejercicio 8: La Gestión del Kwik-E-Mart
 
-8.1 Se deberán implementar la listas utilizadas en las clases definidad anteriormente utilizando Listas Enlazadas. Encontraran el prototipo en su archivo correspondiente.
+## Ejercicio 2: Recursividad en el Universo Pokémon
 
-8.2 Implementar Iteradores para las listas enlazadas.
+Los entrenadores a menudo se enfrentan a desafíos que requieren la búsqueda de Pokémones en un área. Para este ejercicio implementar una función recursiva que simula la búsqueda de un Pokémon específico en una lista de Pokémones.
+
+Suponga que tiene una lista donde cada nodo representa un Pokémon en el camino, cada nodo tiene un nombre y puede contener más de un Pokémon. La búsqueda de un Pokémon específico se puede realizar de manera recursiva verificando si el Pokémon se encuentra en el nodo actual o una de sus sublistas.
+
+
+#### Clases a Implementar
+
+Clase <code>PokemonNode</code>:  
+
+- Atributos:
+    - <code>nombre : str</code>: Nombre del Pokémon.
+    - <code>siguiente : PokemonNode</code>: (PokemonNode) Siguiente Pokémon en el equipo (puede ser <code>None</code>).
+
+- Métodos:
+    - <code>__init__(self, nombre: str)</code>: Constructor que inicializa el nombre del Pokémon y establece al siguiente como <code>None</code>.
+
+Función Recursiva <code>buscar_pokemon()</code>:
+
+- Parámetros:
+    - <code>nodo : PokemonNode</code>: Nodo actual donde se realiza la búsqueda.
+    - <code>nombre_pokemon : str</code>: Nombre del Pokémon que se busca.
+
+- Retorno:
+    - Devuelve <code>True</code> si el Pokémon es encontrado en el equipo, y <code>False</code> si no se encuentra. 
+
+- Lógica:
+    - Si el nodo actual es <code>None</code>, devuelve <code>False</code>.
+    - Si el nombre del nodo actual coincide con <code>nombre_pokemon</code>, devuelve <code>True</code>.
+    - Llama recursivamente a sí misma para buscar en la lista.
+
+
+- Teoría: Cuál es el tiempo de ejecución estimado de la función <code>buscar_pokemon()</code>?
+
+
+## Ejercicio 3: Sistema de Evoluciones de Pokémon
+
+Cada Pokémon podría evolucionar a una forma más poderosa, para gestionarlas implementar un sistema utilizando una </code>PilaEnlazada</code>, que permita llevar un registro de las evoluciones en orden inverso ya que la más reciente es la que se aplicará primero.
+
+La pila se utilizará para almacenar las evoluciones de un Pokémon. Cuando uno de ellos evoluciona, se agrega su nueva forma a la pila. Si el entrenador decide revertir la evolución se puede desapilar la forma más reciente.
+
+Queremos recorrer la pila utilizando un ciclo <code>for</code> deberan implementar un Iterador para esta clase.
+
+
+#### Clases a Implementar
+
+- Clase <code>Evolucion</code>:
+    - Atributos:
+        - <code>nombre : str</code>: Nombre del Pokémon en su forma evolucionada.
+
+    - Métodos:
+        - <code>_init__(self, nombre: str)</code>: Constructor que inicializa el nombre de la evolución.
+
+- Clase <code>PilaEvoluciones:
+    - Atributos:
+        - <code>evoluciones: list</code>: Lista enlazada que almacena las evoluciones en orden.
+
+    - Métodos:
+        - <code>__init__(self)</code>: Constructor que inicializa la lista de evoluciones como vacía.
+        - <code>apilar (self, evolucion: Evolucion)</code>: Método que agrega una evolución a la pila.
+        - <code>desapilar (self)</code>: Método que elimina y devuelve la última evolución agregada a lapila. Si la pila está vacía debe devolver un mensaje indicando que no hay evoluciones para desapilar.
+        - <code>mostrar_evoluciones (self)</code>: Método que imprime todas las evoluciones en el orden en que fueron apiladas.
+        - <code>__iter__()</code>: Retorna el iterador.
+
+- Clase <code>IteradorPilaEvoluciones:
+    - Atributos:
+        - <code>actual: Evolucion</code>: Lista enlazada que almacena las evoluciones en orden.
+
+    - Métodos:
+        - <code>__next__(self)</code>: Método que retorna el "siguiente valor" y actualiza el <code>actual</code>.
+
 
 ---
 Nombre y Apellido:
