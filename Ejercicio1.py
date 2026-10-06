@@ -28,4 +28,10 @@ class ENTRENADOR:
      self.nombre = nombre
      self.equipo = equipo
 
+#se pide que muestre un mensaje cuando llegue al limite de 6 pokemones
  def agregar_pokemon
+   if lend(self.pokemones) >= 6:
+    print(limite de 6 alcanzado)
+   else self.pokemones
+
+ def 
