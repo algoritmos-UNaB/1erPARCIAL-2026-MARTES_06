@@ -126,12 +126,11 @@ Queremos recorrer la pila utilizando un ciclo <code>for</code> deberan implement
     - Métodos:
         - <code>__next__(self)</code>: Método que retorna el "siguiente valor" y actualiza el <code>actual</code>.
 
-
 ---
-Nombre y Apellido:
+Nombre y Apellido: Florencia Salinas
 
-Email:
+Email: florsalinas25@live.com
 
-Comisión:
+Comisión: 01 (martes tarde)
 
 ---
