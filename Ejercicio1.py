@@ -38,6 +38,4 @@ class Entrenador:
             
             return contador / len(self.equipo)
 
-            1
-
         
