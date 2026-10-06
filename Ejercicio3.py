@@ -14,12 +14,21 @@ class PilaEvoluciones:
         self.evoluciones = evolucion
     
     def desapilar(self):
-        eliminado = self.evoluciones
+        #agregado de caso sin evoluciones
+        if self.evoluciones is None:
+            return "No hay evoluciones para desapilar"
+        eliminado = self.
+        #se mueve el tope al nodo siguiente
         self.evoluciones = self.evoluciones.siguiente
         return eliminado
 
     def mostrar_evoluciones(self):
         actual.self.evoluciones
+        #caso sin evoluciones
+        if actual is None:
+            print("No hay evoluciones que mostrar")
+        return
+        #caso con alguna evolución
         print("Todas las evoluciones:")
         while actual is not None:
             print(f"- {actual.nombre}")
@@ -35,5 +44,9 @@ class IteradorPilaEvoluciones:
         self.actual = inicio
 
     def __next__(self):
+        #caso de excepcion al llegar al final de la pila
+        if self.actual is None:
+            raise StopIteration
+        #Se mueve el puntero al siguiente elemento de la pila
         self.actual = self.actual.siguiente
         return resultado
