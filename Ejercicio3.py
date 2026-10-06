@@ -20,9 +20,8 @@ class PilaEvoluciones():
     def mostrar_evoluciones(self):
         actual= self.evoluciones
         nombres=[]
-        while actual is not None:
-            nombres.append(actual.nombre)
-            actual=actual.siguiente
+        for evolucion in self:
+            nombres.append(evolucion.nombre)
         for nombre in reversed(nombres):
             print(nombre)
     def __iter__(self):
