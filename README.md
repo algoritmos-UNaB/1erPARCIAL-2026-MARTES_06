@@ -3,7 +3,6 @@
 # 1erPARCIAL - MARTES - 06/10/26 - Comisión 1 -
 
 
-
 - - -
 
 ### 📌 **Modalidad**
@@ -23,7 +22,7 @@
 
 ## Estructuras de Datos en el Universo Pokémon
 
-- - -
+- - -  
 
 ## Ejercicio 1: Implementación de TADs
 
@@ -128,10 +127,10 @@ Queremos recorrer la pila utilizando un ciclo <code>for</code> deberan implement
 
 
 ---
-Nombre y Apellido:
+Nombre y Apellido: Victor Sebastian Aquino Frago
 
-Email:
+Email: sebas.aquinofrago@gmail.com
 
-Comisión:
+Comisión: 1
 
 ---
