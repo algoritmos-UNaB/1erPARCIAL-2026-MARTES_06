@@ -15,3 +15,11 @@ class PokemonNode:
         
         return buscar_pokemon(nodo.siguiente, nombre_pokemon)
         #se llama a sí misma para avanzar una posición y volver a buscar
+
+        """Teoría:
+        Tomando sólo la parte práctica lineal porque no puedo ver más de un pokemon por posicion, o forma de acceder a sublistas
+        Peor escenario: no existe el pokemon, y la funcion tiene n llamadas recursivas
+        Mejor escenario: pokemon en primera posición, sin llamada recursiva
+        o(n) donde n es o bien dónde está el pokemon en la lista o bien la longitud (len) de la lista en caso de no estar
+        
+        """
