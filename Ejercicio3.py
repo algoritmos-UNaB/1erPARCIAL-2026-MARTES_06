@@ -30,3 +30,4 @@ class Iterador_Pila_Evolutiva:
         evolucion=self.actual.dato
         self.actual=self.actual.siguiente
         retun evolucion
+        #
