@@ -13,3 +13,5 @@ class Pokemon:
 
     def str(self):
         return f"Nombre: {self.nombre}, Tipo: {self.tipo}, Nivel: {self.nivel}"
+
+#hola
