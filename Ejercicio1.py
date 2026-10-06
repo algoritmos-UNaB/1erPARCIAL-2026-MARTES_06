@@ -2,7 +2,7 @@
 
 class Pokemon:
 
-    def __init__(self, nombre, tipo, nivel):
+    def __init__(self, nombre: str, tipo: str, nivel: int):
         self.nombre = nombre
         self.tipo = tipo
         self.nivel = nivel
