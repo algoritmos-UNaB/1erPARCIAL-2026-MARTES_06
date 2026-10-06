@@ -1,4 +1,4 @@
-class Pokemmon:
+class Pokemon:
     def__init__(self, nombre: str, tipo: str, nivel: int):
         self.nombre = nombre
         self.tipo
