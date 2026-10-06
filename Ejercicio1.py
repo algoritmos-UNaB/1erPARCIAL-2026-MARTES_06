@@ -19,7 +19,7 @@ class Entrenador:
         self.equipo = []
 
     def agregar_pokemon(self, pokemon):
-        if len(self.equipo) >= 6:
+        if self.equipo >= 6:
             print("No se pueden agregar mas de 6 Pokemones.")
         else:
             self.equipo.append(pokemon)
