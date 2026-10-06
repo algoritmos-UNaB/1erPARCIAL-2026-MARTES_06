@@ -3,7 +3,7 @@
 # 1erPARCIAL - MARTES - 06/10/26 - Comisión 1 -
 
 
-jj
+jjmnm
 - - -
 
 ### 📌 **Modalidad**
@@ -23,7 +23,7 @@ jj
 
 ## Estructuras de Datos en el Universo Pokémon
 
-- - -
+- - - 
 
 ## Ejercicio 1: Implementación de TADs
 
