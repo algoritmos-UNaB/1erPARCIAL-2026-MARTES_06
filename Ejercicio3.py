@@ -24,29 +24,29 @@ class PilaEvoluciones:
 
     def mostrar_evoluciones(self):
         actual.self.evoluciones
-        #caso sin evoluciones
+        # Caso sin evoluciones
         if actual is None:
             print("No hay evoluciones que mostrar")
         return
-        #caso con alguna evolución
+        # Caso con alguna evolución
         print("Todas las evoluciones:")
         while actual is not None:
             print(f"- {actual.nombre}")
             actual = actual.siguiente
     
     def __iter__(self):
-        #Retorna el iterador
+        # Retorna el iterador
         return IteradorPilaEvoluciones(self.evoluciones)
 
 class IteradorPilaEvoluciones:
     def __init__ (self, inicio: Evolucion):
-        #primer nodo donde inicia la iteración
+        # Primer nodo donde inicia la iteración
         self.actual = inicio
 
     def __next__(self):
-        #caso de excepcion al llegar al final de la pila
+        # Caso de excepcion al llegar al final de la pila
         if self.actual is None:
             raise StopIteration
-        #Se mueve el puntero al siguiente elemento de la pila
+        # Se mueve el puntero al siguiente elemento de la pila
         self.actual = self.actual.siguiente
         return resultado
