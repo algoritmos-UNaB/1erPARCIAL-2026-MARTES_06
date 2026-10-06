@@ -3,7 +3,6 @@
 # 1erPARCIAL - MARTES - 06/10/26 - Comisión 1 -
 
 
-
 - - -
 
 ### 📌 **Modalidad**
@@ -128,10 +127,10 @@ Queremos recorrer la pila utilizando un ciclo <code>for</code> deberan implement
 
 
 ---
-Nombre y Apellido:
+Nombre y Apellido: Brandon Sanchez
 
-Email:
+Email: branchezz919.zz@gmail.com
 
-Comisión:
+Comisión: 1
 
 ---
