@@ -7,7 +7,7 @@ class Pokemon:
 
     def subir_nivel(self, nivel):
         self.nivel < 100
-        self.nivel += 1
+        self.nivel + 1
 
     def __str__(self):
         return (f"Nombre: {self.nombre}, Tipo: {self.tipo}, Nivel: {self.nivel}")
