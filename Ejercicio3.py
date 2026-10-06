@@ -18,7 +18,6 @@ class PilaEvoluciones():
         self.evoluciones=evolucion.siguiente
         return evolucion
     def mostrar_evoluciones(self):
-        actual= self.evoluciones
         nombres=[]
         for evolucion in self:
             nombres.append(evolucion.nombre)
