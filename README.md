@@ -128,10 +128,12 @@ Queremos recorrer la pila utilizando un ciclo <code>for</code> deberan implement
 
 
 ---
-Nombre y Apellido:
+Nombre y Apellido:Mara Laciar
 
-Email:
+DNI: 36087167
 
-Comisión:
+Email:laciarmara@gmail.com
+
+Comisión:1
 
 ---
