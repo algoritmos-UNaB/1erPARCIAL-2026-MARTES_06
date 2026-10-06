@@ -15,4 +15,4 @@ class PokemonNode:
         return buscar_pokemon(nodo.siguiente, nombre_pokemon)
 
 
-# El tiempo de ejecucion es O(n), donde se recorren todos los nodos de la lista hasta encontrar el Pokemon o llegar al final y comprobar que no se encuentra.
+# El tiempo de ejecucion es O(n), donde se recorren todos los nodos de la lista hasta encontrar el Pokemon o llegar al final y comprobar que no se encuentra. 1
