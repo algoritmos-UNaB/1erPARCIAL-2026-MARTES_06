@@ -3,7 +3,7 @@
 # 1erPARCIAL - MARTES - 06/10/26 - Comisión 1 -
 
 
-77
+Aquino Priscila
 - - -
 
 ### 📌 **Modalidad**
@@ -128,10 +128,10 @@ Queremos recorrer la pila utilizando un ciclo <code>for</code> deberan implement
 
 
 ---
-Nombre y Apellido:
+Nombre y Apellido:Aquino Priscila Ayelen
 
-Email:
+Email:pryscyaquino@gmail.com
 
-Comisión:
+Comisión: 1
 
 ---
