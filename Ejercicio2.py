@@ -15,4 +15,6 @@ def buscar_pokemon(nodo: PokemonNode, nombre_pokemon: str):
 
 
 # Teoría: Cuál es el tiempo de ejecución estimado de la función buscar_pokemon()?
-# Respuesta: El tiempo de ejecución etimado es de complejidad lineal, es decir, O(n). Esto teniendo en cuenta el peor caso en que el pokemon no se encuentre, en cuyo caso debera recorrer cada nodo para el cual debe realizar una nserie de operaciones primitivas las cuales aumentan de forma proporcional
+# Respuesta: El tiempo de ejecución etimado es de complejidad lineal, es decir, O(n). Esto teniendo en cuenta el peor caso en que el pokemon no se -
+# encuentre, en cuyo caso debera recorrer cada nodo para el cual debe realizar una nserie de operaciones primitivas las cuales aumentan de forma 
+# proporcional
