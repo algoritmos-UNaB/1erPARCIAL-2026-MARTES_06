@@ -63,6 +63,8 @@ class Entrenador:
         return f"Tu promedio es: {promedio}"
 
 
+#TEST
+
 app = Entrenador ("Rodrigo")
 app.agregar_pokemon (Pokemon ("Pikachu", "Electrico", 40))
 app.agregar_pokemon (Pokemon ("Charizard", "Fuego", 50))
@@ -72,3 +74,7 @@ app.agregar_pokemon (Pokemon ("Rookidee", "Aire", 20))
 app.mostrar_equipo ()
 
 print (app.nivel_promedio ())
+
+"""Nombre y Apellido: RODRIGO MATIAS LOPEZ
+Email: rodlopez003@gmail.com
+Comisión: 1"""
