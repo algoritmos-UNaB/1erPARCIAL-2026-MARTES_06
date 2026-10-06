@@ -32,3 +32,11 @@ class Pokemon:
           self.nombre = nombre
           self.tipo = tipo
           self.nivel = nivel
+     def subir_nivel(self, nivel):
+          if self.nivel > 100 then self.nivel + 1
+     
+     def str(self):
+          print(f"El pokemon en {self.nombre} su tipo es {self.tipo} tiene un nivel de poder de {self.nivel}")
+
+
+     
