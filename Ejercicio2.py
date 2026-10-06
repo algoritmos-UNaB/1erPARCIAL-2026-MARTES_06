@@ -6,6 +6,9 @@ class PokemonNode:
 
     def buscar_pokemon(nodo: PokemonNode, nombre_pokemon : str) -> bool:
         #función recursiva
+        if nodo is None:
+            return False
+            #Caso de llegar al final de la lista de pokemones
         if nodo.nombre == nombre_pokemon:
             #Si encuentra al pokemon devuelve True
             return True
