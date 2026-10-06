@@ -2,33 +2,21 @@ class PokemonNode :
 
     def __init__ (self, nombre: str) :
 
-        self.nombre = nombre
-        self.siguiente = None
+        self.nombre = nombre #nombre que guarda el nodo
+        self.siguiente = None #referencia al proximo nodo
 
 
 def buscar_pokemon (nodo: PokemonNode, nombre_pokemon: str) -> bool :
-
+    #si la lista esta vacia o no encuentra el nombre, no existe el pokemon
     if nodo is None :
 
         return f"{nombre_pokemon} | {False}"
 
     if nodo.nombre == nombre_pokemon:
-
+        #nodo actual tiene el nombre actual del pokemon y devuelve verdadero porque se encontro
         return f"{nombre_pokemon} | {True}"
-
+    #caso recursivo, se repite la busqueda con el nodo siguiente
     return buscar_pokemon (nodo.siguiente, nombre_pokemon)
-
-
-#TEST
-
-app = PokemonNode ("Pikachu")
-app.siguiente = PokemonNode ("Charizard")
-app.siguiente.siguiente = PokemonNode ("Squirtle")
-
-print ("==== Recursividad ====")
-print (buscar_pokemon (app, ("Squirtle")))
-print (buscar_pokemon (app, ("Rookidee")))
-print (buscar_pokemon (None, ("Pikachu")))
 
 
 """Teoría: Cuál es el tiempo de ejecución estimado de la función buscar_pokemon()?
