@@ -39,3 +39,6 @@ def agregar_pokemon(self, pokemon):
         promedio = suma / len(self.equipo)
         return promedio
 
+
+        
+
