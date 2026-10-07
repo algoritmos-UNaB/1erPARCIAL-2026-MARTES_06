@@ -1,6 +1,6 @@
 # Algoritmos y Estructuras de Datos
 
-# 1erPARCIAL - MARTES - 06/10/26 - Comisión 1 -
+# 1erPARCIAL - MARTES - 06/10/26 - Comisión 1 - 
 
 
 
@@ -128,10 +128,10 @@ Queremos recorrer la pila utilizando un ciclo <code>for</code> deberan implement
 
 
 ---
-Nombre y Apellido:
+Nombre y Apellido: Julio Soldano
 
-Email:
+Email: jula76@gmail.com
 
-Comisión:
+Comisión: 1
 
 ---
