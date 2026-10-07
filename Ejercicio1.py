@@ -15,4 +15,27 @@ class Pokemon:
 
     def __str__(self):
         return f"Nombre: {self.nombre}, Tipo: {self.tipo}, Nivel: {self.nivel}"
+class Entrenador:
+    def__init__(self, nombre):
+        self.nombre = nombre
+        self.equipo = []
         
+def agregar_pokemon(self, pokemon):
+        if len(self.equipo) < 6:
+            self.equipo.append(pokemon)
+        else:
+            print("No se puede tener más Pokémon.")
+                def mostrar_equipo(self):
+        for pokemon in self.equipo:
+            print(pokemon)
+
+    def nivel_promedio(self):
+        if len(self.equipo) == 0:
+        
+        suma = 0
+        for p in self.equipo:
+            suma += p.nivel
+            
+        promedio = suma / len(self.equipo)
+        return promedio
+
