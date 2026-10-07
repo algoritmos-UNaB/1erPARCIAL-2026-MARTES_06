@@ -23,3 +23,4 @@ class PokemonNode:
         #Tiempo de ejecucion (complejidad temporal/Orden lineal) donde N es el numero de nodos (pokemon) en la lista enlazada= La explicacion que da es que en el peor de los casos (Cuando el pokemon esta en el ultimo nodo o no existe en la lista), la funcion realiza una llamada recursiva por cada elemento existente en la estructura, evaluando N nodos individualmente.
 
 
+
