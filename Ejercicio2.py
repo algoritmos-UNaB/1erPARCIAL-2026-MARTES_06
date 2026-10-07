@@ -5,15 +5,14 @@ class PokemonNode:
 
 
 def buscar_pokemon(nodo, nombre_pokemon):
-    # Caso 1: si se termino la lista o esta vacia
+    # Caso 1: lista finalizada  o vacia
     if nodo is None:
         return False
     
-    # Caso 2: si encontramos el pokemon en el nodo actual
+    # Caso 2: si encuentra pokemon en el nodo actual
     if nodo.nombre == nombre_pokemon:
         return True
     
     # Paso recursivo: se sigue buscando en el siguiente nodo
     return buscar_pokemon(nodo.siguiente, nombre_pokemon)
 
-    
