@@ -28,18 +28,43 @@ nivel_promedio(): Método que calcula y devuelve el nivel promedio de los Pokém
 """
 
 class Pokemon:
-     def __inti__(self, nombre, tipo, nivel):
-          self.nombre = nombre
-          self.tipo = tipo
-          self.nivel = nivel
-     def subir_nivel(self, nivel):
-          if self.nivel > 100 then self.nivel + 1
+    NIVEL_MIN = 1
+    NIVEL_MAX = 100
+
+    def __init__(self, nombre: str, tipo:str, nivel:int):
+        self.nombre = nombre
+        self.tipo = tipo
+        self.nivel = nivel
      
-     def str(self):
-          print(f"El pokemon en {self.nombre} su tipo es {self.tipo} tiene un nivel de poder de {self.nivel}")
+     
+def subir_nivel(self):
+        if self.nivel < self.NIVEL_MAX:
+            self.nivel +=1
+        else: print("error")
+
+def __str__(self):
+     return f"Nombre {self.nombre}, tipo: {self.tipo}, nivel: {self.nivel}"
 
 
 class Entrenador:
-     def __int__(self, nombre, equipo):
+     MAX_EQUIPO = 6
+     def __init__(self, nombre: str):
           self.nombre = nombre
-          self.equipo = equipo
+          self.equipo = []
+     def agregar_pokemon(self, pokemon: Pokemon):
+        if len(self.equipo) >= self.MAX_EQUIPO:
+            print(f"{self.nombre} ya tiene {self.MAX_EQUIPO} Pokémon. No se pueden tener más.")
+        else:
+            self.equipo.append(pokemon)
+     def mostrar_equipo(self):
+          if not self.equipo:
+               print(f"{self.nombre} no tiene Pokémon en su equipo.")
+               return
+          print(f"Equipo de {self.nombre}:")
+          for pokemon in self.equipo:
+            print(pokemon)
+
+     def nivel_promedio(self):
+        if not self.equipo:
+            return 0
+        return sum(p.nivel for p in self.equipo) / len(self.equipo)
